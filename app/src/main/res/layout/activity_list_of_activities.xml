@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context="com.teachme.teachmeclient.Views.simple_views.ListOfActivities">
+
+    <Button
+        android:id="@+id/btnUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="GoToUsers"
+        android:text="Users"
+        android:paddingLeft="6dip"
+        android:paddingTop="6dip" />
+
+    <Button
+        android:id="@+id/btnExercises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="GoToExercises"
+        android:text="Exercises"
+        android:paddingLeft="6dip"
+        android:paddingTop="6dip"
+        app:layout_constraintTop_toBottomOf="@+id/btnUsers" />
+
+    <Button
+        android:id="@+id/btnCourseCreateFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="GoToCourseCreateFlow"
+        android:text="Course Create Flow"
+        android:paddingLeft="6dip"
+        android:paddingTop="6dip"
+        app:layout_constraintTop_toBottomOf="@+id/btnExercises" />
+
+    <Button
+        android:id="@+id/btnBlobManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="GoToBlobManager"
+        android:text="Blob Manager"
+        android:paddingLeft="6dip"
+        android:paddingTop="6dip"
+        app:layout_constraintTop_toBottomOf="@+id/btnCourseCreateFlow" />
+
+    <Button
+        android:id="@+id/btnLoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="GoToLoginActivity"
+        android:text="@string/title_activity_login"
+        android:paddingLeft="6dip"
+        android:paddingTop="6dip"
+        app:layout_constraintTop_toBottomOf="@+id/btnBlobManager" />
+
+    <Button
+        android:id="@+id/btnAzureTestLoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="GoToAzureTestLoginActivity"
+        android:text="Azure Test Login"
+        android:paddingLeft="6dip"
+        android:paddingTop="6dip"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginActivity" />
+
+</LinearLayout>

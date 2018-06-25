@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teachme.teachmeclient">
+
+    <!-- For Authentication -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.apermission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Views.MainActivity" />
+        <activity android:name=".Views.simple_views.ListOfActivities">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Views.simple_views.CourseDetailActivity" />
+        <activity android:name=".Views.simple_views.SectionDetailActivity" />
+        <activity android:name=".Views.simple_views.ExerciseStudentsActivity" />
+        <activity android:name=".Views.simple_views.ExerciseStudentDetailActivity" />
+        <activity android:name=".Views.BlobManagerActivity" />
+        <activity android:name=".Views.simple_views.CommentsActivity" />
+        <activity android:name=".Views.simple_views.CommentDetailActivity" />
+        <activity android:name=".Views.simple_views.CommentRatingsActivity" />
+        <activity android:name=".Views.simple_views.CommentRatingDetailActivity" />
+        <activity android:name=".Views.ExercisesActivity" />
+        <activity android:name=".Views.ExerciseDetailActivity" />
+        <activity android:name=".Views.TeachersActivity" />
+        <activity android:name=".Views.UserDetailActivity" />
+        <activity android:name=".Views.ListImagesActivity" />
+        <activity android:name=".Views.ImageActivity" />
+        <activity android:name=".BaseActivity.BaseActivity" />
+        <activity android:name=".Views.AnswersActivity" />
+        <activity android:name=".Views.PairsActivity" />
+        <activity android:name=".Views.SpacesActivity" />
+        <activity android:name=".Views.CoursesActivity" />
+        <activity android:name=".Views.SectionsActivity" />
+        <activity android:name=".Views.LessonsActivity" />
+        <activity android:name=".Views.simple_views.PairDetailActivity" />
+        <activity android:name=".Views.simple_views.AnswerDetailActivity" />
+        <activity android:name=".Views.simple_views.SpaceDetailActivity" />
+        <activity android:name=".Views.simple_views.StudentCoursesActivity" />
+        <activity android:name=".Views.simple_views.StudentCourseDetailActivity" />
+
+        <activity
+            android:name=".Views.simple_views.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name="com.microsoft.windowsazure.mobileservices.authentication.RedirectUrlActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="easyauth.callback"
+                    android:scheme="@string/app_url_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Views.simple_views.AzureTestLoginActivity" />
+    </application>
+
+</manifest>
